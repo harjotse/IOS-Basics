@@ -2,7 +2,6 @@ import Foundation
 
 // fucntions
 //functions calls another function
-//gaurd statements
 //calculated variables
 
 //---------------------------------------------------------------
@@ -42,5 +41,20 @@ simple("hello normal")
 
 
 //---------------------------------------------------------------
-//gaurd statements
+//calculated variables
+// if we have var/let already declared and we will use same var/let inside function then rather than calling function and all we can do this
 
+let num1:Int = 32
+let num2:Int = 2
+func add12() -> Int {
+    return num1 + num2
+}
+var sum = add12()
+print (sum)
+// now instead of this what we can do is
+let num12:Int = 32
+let num21:Int = 243
+var addNumber:Int{
+    return num12 + num21
+}
+print(addNumber)
